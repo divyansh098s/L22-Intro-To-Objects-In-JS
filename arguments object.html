@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Argument Objects In JS</title>
+</head>
+<body>
+<p id="vi"></p>
+<script>
+var max = 0;
+function big ()
+{
+for (i=0;i<arguments.length;i++){
+if(arguments[i]>max){
+max = arguments[i];
+}
+}
+return max ; 
+}
+document.getElementById("vi").innerHTML=big(100,11111,6,100000025,456,5897463210,78945612300321654987)
+</script>
+</body>
+</html>
